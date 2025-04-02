@@ -17,14 +17,16 @@ https://github.com/user-attachments/assets/d5fafaa5-ad65-48bd-888c-8516560c0d96
 
 ## Installation:
 
+*Tested on Kubuntu 24.04 LTS*
+
 In a user directory of your choice, run the following commands:
 
-cd /tmp
-git clone https://github.com/SilverLPs/plymouth-kubuntu-gearspinner.git
-sudo cp -R plymouth-kubuntu-gearspinner/kubuntu-gearspinner /usr/share/plymouth/themes/
-sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/kubuntu-gearspinner/kubuntu-gearspinner.plymouth 160
-sudo update-alternatives --set default.plymouth /usr/share/plymouth/themes/kubuntu-gearspinner/kubuntu-gearspinner.plymouth
-sudo update-initramfs -u -k all
+    cd /tmp
+    git clone https://github.com/SilverLPs/plymouth-kubuntu-gearspinner.git
+    sudo cp -R plymouth-kubuntu-gearspinner/kubuntu-gearspinner /usr/share/plymouth/themes/
+    sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/kubuntu-gearspinner/kubuntu-gearspinner.plymouth 160
+    sudo update-alternatives --set default.plymouth /usr/share/plymouth/themes/kubuntu-gearspinner/kubuntu-gearspinner.plymouth
+    sudo update-initramfs -u -k all
 
 ---
 
